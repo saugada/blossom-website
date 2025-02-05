@@ -16,9 +16,11 @@
         .hero {
             background: url('https://raw.githubusercontent.com/saugada/blossom-website/03b39a45d42888c5a141a9835292cf8b556154a0/Prancheta%201-100.jpg') no-repeat center center/cover;
             height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                height: 40vh;
+            }
         }
         section {
             padding: 60px 20px;
@@ -31,7 +33,7 @@
         p {
             font-size: 1.2em;
             line-height: 1.6;
-            color: #555;
+            color: #333;
         }
         .button {
             background-color: #E07A9B;
@@ -44,14 +46,14 @@
             display: inline-block;
         }
         .about {
-            background-color: #164A41;
+            background-color: #9C6C9C;
             color: white;
             padding: 60px 20px;
         }
         .collection {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             gap: 20px;
             margin-top: 40px;
         }
@@ -69,27 +71,24 @@
         .collection-item img:hover {
             transform: scale(1.05);
         }
-        .collection-item p {
-            margin-top: 10px;
-            font-size: 1.1em;
-            color: #333;
-        }
         .socials {
             background-color: #fff;
             padding: 40px 20px;
         }
         .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             font-size: 2em;
             margin-top: 20px;
         }
-        .social-icons a {
-            margin: 0 10px;
-            color: #E07A9B;
-            text-decoration: none;
+        .social-icons a img {
+            width: 40px;
         }
         .testimonials {
             background-color: #FCE4EC;
             padding: 60px 20px;
+            color: #333;
         }
         .testimonial-item {
             margin: 20px auto;
@@ -99,6 +98,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
         }
         footer {
             background-color: #333;
@@ -114,8 +114,8 @@
 
     <section class="about">
         <h2>About Blossom 🌿</h2>
-        <p>Blossom nasceu da necessidade de criar roupas de banho que realmente abracem a diversidade dos corpos, especialmente para pessoas trans. A moda sempre avançou, mas ainda havia um vazio para peças que oferecessem conforto, segurança e estilo para todos os corpos.</p>
-        <p>Nosso propósito é proporcionar roupas que fazem você se sentir visto(a), respeitado(a) e confiante. 🌈✨ Blossom é um espaço onde a moda transcende gêneros e celebra a autenticidade de cada um. Você merece florescer! 🌸</p>
+        <p>🌸 Blossom nasceu para abraçar a diversidade dos corpos, oferecendo conforto, segurança e estilo para todos. 🌈✨</p>
+        <p>💖 Nossa moda celebra a autenticidade e a liberdade de cada um. Você merece florescer! 🌿</p>
     </section>
 
     <section>
@@ -123,46 +123,63 @@
         <p>Descubra nossas peças pensadas para proporcionar confiança, conforto e muito estilo. 👙💖</p>
         <div class="collection">
             <div class="collection-item">
-                <a href="https://raw.githubusercontent.com/saugada/blossom-website/08578138607fa86f407a41d7a6defadc16eec5e6/bikini%20-%20cuntelectual.png" target="_blank">
-                    <img src="https://raw.githubusercontent.com/saugada/blossom-website/08578138607fa86f407a41d7a6defadc16eec5e6/bikini%20-%20cuntelectual.png" alt="Bikini - Cuntelectual">
-                </a>
-                <p>Bikini - Cuntelectual</p>
+                <a href="#"><img src="#" alt="Produto 1"></a>
+                <p>Produto 1</p>
             </div>
-            <!-- Adicione os outros itens aqui -->
+            <div class="collection-item">
+                <a href="#"><img src="#" alt="Produto 2"></a>
+                <p>Produto 2</p>
+            </div>
+            <div class="collection-item">
+                <a href="#"><img src="#" alt="Produto 3"></a>
+                <p>Produto 3</p>
+            </div>
+            <div class="collection-item">
+                <a href="#"><img src="#" alt="Produto 4"></a>
+                <p>Produto 4</p>
+            </div>
+            <div class="collection-item">
+                <a href="#"><img src="#" alt="Produto 5"></a>
+                <p>Produto 5</p>
+            </div>
+            <div class="collection-item">
+                <a href="#"><img src="#" alt="Produto 6"></a>
+                <p>Produto 6</p>
+            </div>
         </div>
     </section>
 
     <section class="testimonials">
         <h2>Blossom: Minha Experiência Floral 🌺</h2>
         <div class="testimonial-item">
-            <p><strong>Lorena Urias 🐍</strong> - Uberlândia, MG, 29 anos</p>
-            <p>“Nunca experimentei nada assim, agora sinto que meu corpo também é válido para espaços de férias que antes costumavam ser só inseguranças. Muito obrigada, Blossom, pelo conforto e dignidade que vocês fornecem! 💕”</p>
+            <p><strong>Lorena Urias 🐍</strong> - Uberlândia, MG</p>
+            <p>“Nunca experimentei nada assim! Obrigada, Blossom!”</p>
         </div>
         <div class="testimonial-item">
-            <p><strong>Tereza Marrom 🔥</strong> - Zona Leste, SP, 32 anos</p>
-            <p>“Essa nova coleção é babado!! 🔥 As estampas das peças brancas são lindas, mas o bordado das peças coloridas é surreal! Quero comprar todas as peças já! Meninas, aproveitem pra usar meu cupom <strong>TherezaBrown15</strong>!”</p>
+            <p><strong>Tereza Marrom 🔥</strong> - São Paulo, SP</p>
+            <p>“A coleção é incrível! Quero todas as peças já!”</p>
         </div>
         <div class="testimonial-item">
-            <p><strong>Wanessa Lobo 💖</strong> - Flamengo, RJ, 44 anos</p>
-            <p>“É babado mesmo, meninas, eu dou 5 estrelas ⭐⭐⭐⭐⭐! Sinto que as peças também dão um up na bunda, porque a minha não fica caída quando uso! Os boys amam! 😏💋”</p>
+            <p><strong>Wanessa Lobo 💖</strong> - Rio de Janeiro, RJ</p>
+            <p>“Dou 5 estrelas! Sinto que as peças valorizam meu corpo!”</p>
         </div>
     </section>
 
     <section class="socials">
         <h2>#ShareYourBlossoming 📢</h2>
-        <p>Compartilhe suas fotos usando Blossom e inspire outras pessoas! 🌟</p>
+        <p>Compartilhe suas fotos usando Blossom! 🌟</p>
         <div class="social-icons">
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" width="40"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook" width="40"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/YouTube_social_white_squircle.svg" alt="YouTube" width="40"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/TikTok_icon.svg" alt="TikTok" width="40"></a>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_logo_2023.svg" alt="X" width="40"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/YouTube_social_white_squircle.svg" alt="YouTube"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/TikTok_icon.svg" alt="TikTok"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_logo_2023.svg" alt="X"></a>
         </div>
     </section>
 
     <footer>
-        &copy; 2024 Blossom - All Rights Reserved
+        &copy; 2025 Blossom - All Rights Reserved
     </footer>
 </body>
 </html>
